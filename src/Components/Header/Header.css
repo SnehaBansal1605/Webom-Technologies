@@ -1,0 +1,133 @@
+.topbar {
+    background-color: #1A1C20;
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.topbar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.topbar a svg {
+    font-size: 16px;
+    color: var(--theme-color);
+    margin-right: 6px;
+}
+
+.topbarContent {
+    width: 85%;
+    margin: unset;
+}
+
+.topbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.topbar ul li:first-child {
+    margin-right: 20px;
+}
+
+.social {
+    background-color: #000;
+    top: 0;
+    position: absolute;
+    right: 0;
+    padding: 8px 30px;
+}
+
+.social li,
+.social li:first-child {
+    margin-right: 10px !important;
+}
+
+.social li:last-child {
+    margin-right: 0px !important;
+}
+
+.social-link {
+    background-color: #333;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link:hover {
+    background-color: #fff;
+}
+
+.social-link svg {
+    fill: #fff !important;
+    margin-right: 0px !important;
+}
+
+.social-link:hover svg {
+    fill: var(--theme-color) !important;
+}
+
+.call {
+    background-color: #222429;
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px 0px 0px;
+}
+
+.call svg {
+    color: #fff;
+    font-size: 20px;
+}
+
+.headerSections nav {
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    background-color: #05050500;
+    border-color: #EAEAEA40;
+    transition: background-color 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 20px 15px;
+}
+.om
+{
+    color: var(--theme-color);
+}
+.callSupport {
+    margin-right: 20px;
+}
+
+.callSupport p {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.callSupport h6 {
+    font-size: 14px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.contactNow {
+    background-color: var(--theme-color);
+    font-size: 12px;
+    border: 1px solid var(--theme-color);
+    padding: 12px 40px 12px 40px;
+    color: var(--text-color);
+}
+
+@media (max-width:992px) {
+    .topbar {
+        display: none;
+    }
+}
