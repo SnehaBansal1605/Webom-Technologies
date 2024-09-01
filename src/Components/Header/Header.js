@@ -31,7 +31,7 @@ const Header = () => {
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#">
                       Home
                     </a>
@@ -66,7 +66,7 @@ const Header = () => {
                         </a>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="d-flex">
                   <div className="d-flex align-items-center callSupport">
