@@ -13,7 +13,7 @@ const Header = () => {
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
               <a className="navbar-brand" href="#">
-                Web<span className="om">Om</span> Technologies
+                <img className="logoHead" src="../assets/svg/logo-head.svg" />
               </a>
               <button
                 className="navbar-toggler"
@@ -78,7 +78,7 @@ const Header = () => {
                       <h6 className="mb-0">+1 (647) 525-2043</h6>
                     </div>
                   </div>
-                  <Button className="contactNow">CONTACT NOW</Button>
+                  <Button className="contactNow">REQUEST A QUOTE</Button>
                 </div>
               </div>
             </div>

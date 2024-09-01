@@ -1,0 +1,7 @@
+.col-md-6 {
+    width: 48% !important;
+}
+.servicesReq .MuiFormControlLabel-root
+{
+    margin-right: 30px;
+}

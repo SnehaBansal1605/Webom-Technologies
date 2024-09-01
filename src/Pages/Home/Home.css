@@ -1,6 +1,8 @@
 .first-section {
     background-image: url("../../../public/assets/images/banner.png");
     height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .second-section {
@@ -10,7 +12,7 @@
 }
 
 .heroBanner {
-    padding: 40px 0px;
+    padding: 50px 0px;
 }
 
 .heroImage {
@@ -55,37 +57,16 @@
 }
 
 .secondBack {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    left: -60px;
+    max-width: 550px;
+    width: 100%;
 }
 
-.secondPhoto {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    border-radius: 50%;
-}
 
-.secondSecImage {
+/* .secondSecImage {
     width: 100%;
     height: 100%;
     min-height: 550px;
-}
-
-.secLayer {
-    position: absolute;
-    left: 13%;
-    top: 14%;
-    border: 2px solid var(--theme-color);
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    max-width: 400px;
-    max-height: 400px;
-}
+} */
 
 .exLayer {
     position: absolute;
@@ -155,8 +136,8 @@
 }
 
 .detail {
-    color: #85888d;
-    font-weight: 500;
+    color: var(--textThree-color);
+    font-weight: 400;
     font-size: 15px;
     line-height: 26px;
 }
@@ -196,10 +177,301 @@
 .secing h5 {
     font-size: 18px;
     font-weight: 700;
-    color: #85888d;
+    color: var(--textSec-color);
 }
 
 .highlighted {
     color: #000;
     font-weight: 600;
+}
+
+.card-service {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 15px 20px;
+    background-color: #fff;
+    /* Initial white background */
+    text-align: center;
+    max-width: 160px;
+    width: 100%;
+    -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, .07);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, .07);
+    transition: all 300ms linear;
+    min-height: 157px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.card-service h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-top: 13px;
+    z-index: 3;
+    /* Ensure text stays above pseudo-element */
+    position: relative;
+}
+
+.card-service img {
+    max-width: 60px;
+    width: 100%;
+    max-height: 60px;
+    min-height: 60px;
+    height: 100%;
+    z-index: 3;
+    position: relative;
+}
+
+.card-service::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url("../../../public/assets/images/serviceBack.jpg");
+    background-size: cover;
+    background-position: center;
+    content: "";
+    transition: transform 0.5s ease;
+    z-index: 2;
+    transform: translateY(100%);
+}
+
+.requestForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    width: 100%;
+    padding: 40px 40px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card-service:hover::before {
+    transform: translateY(0);
+}
+
+.card-service:hover h2 {
+    color: #fff;
+}
+
+.third-section .title {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+.services {
+    gap: 25px;
+}
+
+.fourth-section {
+    background-image: url("../../../public/assets/images/sectionFour.png");
+    transition: background-image 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: -250px;
+    margin-bottom: 0px;
+    padding: 140px 0px 0px;
+    background-color: #F4F5F8;
+}
+
+.serviceLine .contactNow {
+    padding: 10px 40px !important;
+}
+
+.serviceLine h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px;
+    color: #808287;
+}
+
+.whyChooseItems li {
+    margin: 10px 0px;
+}
+
+.whyChooseItems li a h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.whyChooseItems p {
+    color: var(--textSec-color);
+}
+
+.chosIcon {
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 20px;
+}
+
+.chosIcon svg {
+    fill: var(--theme-color);
+}
+
+.whyContent {
+    max-width: 540px;
+    width: 100%;
+}
+
+.chosIcon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.fifth-section {
+    background-image: url("../../../public/assets/images/faqBg.webp");
+}
+
+.questionSection {
+    max-width: 600px;
+    width: 100%;
+}
+
+.faqForm {
+    padding: 40px 50px 50px;
+    border-radius: 5px;
+    background-color: #F4F5F8;
+    border: 1px solid #E6E8F0;
+    text-align: left;
+}
+
+.faqQuesForm {
+    padding: 41px 50px !important;
+}
+
+.faqForm .MuiAccordion-root {
+    margin: 10px 0px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+.faqForm .MuiAccordion-root:last-child {
+    margin-bottom: 0px;
+}
+
+.faqForm .MuiAccordion-root::before {
+    display: none;
+}
+
+.faqForm .MuiAccordion-root .MuiAccordionSummary-content {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.MuiAccordionSummary-content.Mui-expanded,
+.MuiAccordionSummary-expandIconWrapper.Mui-expanded svg {
+    color: var(--theme-color);
+    fill: var(--theme-color) !important;
+}
+
+.faqForm .MuiAccordion-root svg {
+    fill: #000;
+}
+
+.faqForm .MuiAccordionDetails-root {
+    padding-bottom: 0px;
+    color: var(--textSec-color);
+}
+
+.faqForm .MuiAccordion-root .MuiAccordionSummary-root {
+    min-height: unset;
+}
+
+.faqForm img {
+    max-width: 489px;
+    width: 100%;
+}
+
+.faqForm h4 {
+    color: var(--textThree-color);
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.detail strong {
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: linear-gradient(100deg, #FFAA17 0%, #1C2254 100%);
+    margin: 4px;
+    padding: 3px 7px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.wholeForm .MuiTextField-root {
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    color: #686a6f;
+    border: none;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    .tagline {
+        font-size: 14px;
+    }
+
+    .heroBanner {
+        gap: 20px;
+    }
+
+    .heroTag {
+        font-size: 40px;
+        line-height: 59px;
+    }
+}
+
+@media (max-width:520px) {
+    .heroTag {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .faqQuesForm,
+    .faqForm {
+        padding: 25px !important;
+    }
+
+    .faqForm {
+        margin-bottom: 20px;
+    }
+
+    .faqForm .MuiAccordion-root .MuiAccordionSummary-content {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: unset;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .twoSecings {
+        grid-template-columns: 1fr;
+    }
 }

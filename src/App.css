@@ -2,6 +2,8 @@
   --theme-color: #ffaa17;
   --secondary-color: #8C8F94;
   --text-color: #222429;
+  --textSec-color: #85888d;
+  --textThree-color: #86888d;
 }
 
 body {
@@ -17,7 +19,17 @@ body {
 }
 
 .customContainer {
-  max-width: 1230px;
+  max-width: 1290px;
+  padding: 0px 30px;
   width: 100%;
   margin: auto;
+}
+ul
+{
+  list-style-type: none !important;
+  padding-left: 0px !important;
+}
+a
+{
+  text-decoration: none !important;
 }
