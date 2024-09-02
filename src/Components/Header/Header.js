@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import TopHeader from "./TopHeader";
 import CallIcon from "@mui/icons-material/Call";
 import Button from "../Button/Button";
+import Modal from "@mui/material/Modal";
+import RequestQuoteForm from "../RequestQuote/RequestQuoteForm";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <>
       <header className="header">
@@ -78,13 +83,23 @@ const Header = () => {
                       <h6 className="mb-0">+1 (647) 525-2043</h6>
                     </div>
                   </div>
-                  <Button className="contactNow">REQUEST A QUOTE</Button>
+                  <Button className="contactNow" onClick={handleOpen}>REQUEST A QUOTE</Button>
                 </div>
               </div>
             </div>
           </nav>
         </div>
       </header>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <div className="requestForm">
+          <RequestQuoteForm />
+        </div>
+      </Modal>
     </>
   );
 };
